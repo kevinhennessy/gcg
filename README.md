@@ -1,2 +1,2 @@
 # gcg
-Repository for Angular Training
+Repository for Angular Training.
