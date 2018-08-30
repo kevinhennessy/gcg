@@ -1,0 +1,6 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link *ngFor="let c of categories" [routerLink]= "['/categories', c]" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    {{c | uppercase}}
+  </a>
+</nav>
+The category name is {{categoryName}}!
