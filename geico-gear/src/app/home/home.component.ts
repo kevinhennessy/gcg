@@ -1,5 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ProductService } from '../services/product.service';
+import { Product } from '../services/product';
 
 @Component({
   selector: 'gcg-home',
@@ -7,16 +9,23 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  readonly categories = ['all', 'office', 'apparel', 'outdoor'];
+  readonly categories = ['all', 'office', 'tech', 'outdoor'];
   categoryName: string;
+  products: Product[];
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private productService: ProductService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
-    this.route.params.subscribe(
-      params => {
-        this.categoryName = params['category'];
+    this.route.params.subscribe(params => {
+      this.categoryName = params['category'];
+      if (this.categoryName === 'all') {
+        this.products = this.productService.getAll();
+      } else {
+        this.products = this.productService.getProductsByCategory(this.categoryName);
       }
-    );
+    });
   }
 }

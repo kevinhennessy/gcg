@@ -6,11 +6,11 @@
     <span class="fill"></span>
     <a mat-button routerLink="">
       <mat-icon>store</mat-icon>
-      <span style="font-size:x-large">&nbsp;GC Gear</span>
+      <span style="font-size:x-large">&nbsp;GEICO Gear</span>
     </a>
     <span class="fill"></span>
-    <a mat-button routerLink="cart">
-      <mat-icon>shopping_cart</mat-icon>
+    <a mat-icon-button routerLink="cart">
+      <mat-icon [matBadge]="cartTotalQuantity" matBadgeColor="accent" matBadgePosition="above after">shopping_cart</mat-icon>
     </a>
     </mat-toolbar-row>
 </mat-toolbar>

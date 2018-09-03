@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ShoppingCartService } from '../../services/shopping-cart.service';
+import { Product } from '../../services/product';
 
 @Component({
   selector: 'gcg-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProductDetailsComponent {
 
-  constructor() { }
+  @Input() product: Product;
 
-  ngOnInit() {
+  quantity: number;
+
+  constructor(private shoppingCartService: ShoppingCartService) { }
+
+  addItems() {
+    this.shoppingCartService.addItem(this.product.id, this.quantity);
+    this.quantity = null; // Reset selected number of items.
   }
-
 }

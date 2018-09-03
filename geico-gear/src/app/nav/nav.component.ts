@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ShoppingCartService } from '../services/shopping-cart.service';
 
 @Component({
   selector: 'gcg-nav',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
-  constructor() {}
+  constructor(private shoppingCartService: ShoppingCartService) {}
+
+  get cartTotalQuantity(): number {
+    // null removes attribute from the element, so the badge is not displayed.
+    return this.shoppingCartService.totalQuantity || null;
+  }
 
   }

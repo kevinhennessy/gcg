@@ -6,13 +6,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatIconModule, MatTabsModule, MatGridListModule } from '@angular/material';
+import {
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatSelectModule,
+    MatInputModule,
+    MatBadgeModule
+   } from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { ProductTileComponent } from './home/product-tile/product-tile.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +45,13 @@ import { CheckoutComponent } from './checkout/checkout.component';
     MatButtonModule,
     MatIconModule,
     MatTabsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule,
+    MatSelectModule,
+    MatInputModule,
+    MatBadgeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

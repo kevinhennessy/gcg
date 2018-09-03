@@ -4,6 +4,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
+import { CartResolver } from './cart/cart.resolver';
 
 
 const routes: Routes = [
@@ -17,7 +18,13 @@ const routes: Routes = [
   },
   { path: 'products/:productId', component: ProductComponent },
   { path: 'checkout', component: CheckoutComponent },
-  { path: 'cart', component: CartComponent}
+  {
+    path: 'cart',
+    component: CartComponent,
+    resolve: {
+      products: CartResolver
+    }
+  }
 ];
 
 @NgModule({

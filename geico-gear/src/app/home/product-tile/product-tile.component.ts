@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Product } from '../../services/product';
 
 @Component({
   selector: 'gcg-product-tile',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-tile.component.css']
 })
 export class ProductTileComponent implements OnInit {
+  @Input() product: Product;
 
   constructor() { }
 
