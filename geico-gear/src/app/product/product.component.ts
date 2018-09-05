@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../services/product';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'gcg-product',
@@ -9,7 +10,7 @@ import { Product } from '../services/product';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  product: Product;
+  product: Observable<Product>;
   productId: string;
 
   constructor(

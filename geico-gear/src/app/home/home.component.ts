@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../services/product';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'gcg-home',
@@ -11,7 +12,7 @@ import { Product } from '../services/product';
 export class HomeComponent implements OnInit {
   readonly categories = ['all', 'office', 'tech', 'outdoor'];
   categoryName: string;
-  products: Product[];
+  products: Observable<Product[]>;
 
   constructor(
     private productService: ProductService,
