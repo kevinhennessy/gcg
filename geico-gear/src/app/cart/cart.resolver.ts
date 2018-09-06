@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Resolve } from '@angular/router';
 import { Observable, forkJoin, of } from 'rxjs';
+
 import { ProductService } from '../services/product.service';
 import { ShoppingCartService } from '../services/shopping-cart.service';
 import { Product } from '../services/product';
@@ -18,7 +19,6 @@ export class CartResolver implements Resolve<Observable<Product[]>> {
     // Get IDs of all products in the shopping cart.
     const productsInCart = Object.keys(this.shoppingCartService.getItems());
 
-    // Create an array of lazy HTTP requests. Each request fetches a product.
     const requests = productsInCart.map(productId =>
       this.productService.getProductById(productId)
     );

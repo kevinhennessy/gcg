@@ -45,10 +45,6 @@ header span {
     align-items: center;
 }
 
-/* md-input-container, md-select {
-    font-size: 16px;
-} */
-
 .mat-input-wrapper {
     position: relative;
 }
@@ -94,10 +90,6 @@ mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
     -ms-flex: 1;
     flex: 1;
 }
-
-/* .grid .row > * :not(:first-child) {
-    margin-left: 8px;
-} */
 
 .mat-select-trigger {
     display: flex;
