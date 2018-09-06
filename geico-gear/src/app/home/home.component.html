@@ -6,7 +6,7 @@
 <div class="grid-list-container">
   <mat-grid-list cols="3">
     <mat-grid-tile class="product-grid-tile" *ngFor="let p of products">
-      <gcg-product-tile class="product-tile" [product]="p" [routerLink]="['/products', p.id]"></gcg-product-tile>
+      <gcg-product-tile class="product-tile" [product]="p" [routerLink]="['/products', p._id]"></gcg-product-tile>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

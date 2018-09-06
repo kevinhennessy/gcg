@@ -22,7 +22,7 @@ export class ProductService {
 
   getProductById (id: string): Product {
     return this.products.find(
-      product => product.id === id
+      product => product._id === id
     );
   }
 }

@@ -16,7 +16,7 @@ export class ProductDetailsComponent {
   constructor(private shoppingCartService: ShoppingCartService) { }
 
   addItems() {
-    this.shoppingCartService.addItem(this.product.id, this.quantity);
+    this.shoppingCartService.addItem(this.product._id, this.quantity);
     this.quantity = null; // Reset selected number of items.
   }
 }

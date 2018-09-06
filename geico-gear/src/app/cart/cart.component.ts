@@ -23,8 +23,8 @@ export class CartComponent {
     const cartItems = this.cart.getItems();
 
     const controls = this.products.reduce((accumulator, product) => {
-      const control = new FormControl(cartItems[product.id], positive);
-      return Object.assign(accumulator, { [product.id]: control });
+      const control = new FormControl(cartItems[product._id], positive);
+      return Object.assign(accumulator, { [product._id]: control });
     }, {});
 
     this.formModel = new FormGroup(controls);
@@ -40,14 +40,14 @@ export class CartComponent {
   get total() {
     const cartItems = this.cart.getItems();
     return Object.keys(cartItems).reduce((total, productId) => {
-      const product = this.products.find(p => p.id === productId);
+      const product = this.products.find(p => p._id === productId);
       const quantity = cartItems[productId];
       return total + product.price * quantity;
     }, 0);
   }
 
   removeItem(productId: string) {
-    const index = this.products.findIndex(p => p.id === productId);
+    const index = this.products.findIndex(p => p._id === productId);
     this.cart.removeItem(productId);
     this.products.splice(index, 1);
     this.formModel.removeControl(productId);

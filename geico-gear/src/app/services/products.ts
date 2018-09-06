@@ -2,7 +2,7 @@ import { Product } from './product';
 
 export const PRODUCTS: Product[] = [
   {
-    'id': 'GEPFBOBBLEHEAD',
+    '_id': 'GEPFBOBBLEHEAD',
     'description': '5.5in tall GEICO Gecko Bobblead!',
     'category': 'office',
     'imageUrl': 'assets/images/bobblehead.jpg',
@@ -10,7 +10,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Gecko Bobblehead'
   },
   {
-    'id': 'GEPFMANATEE',
+    '_id': 'GEPFMANATEE',
     'description': `This soft, cuddly mascot represents the t-shirt wearing manatees in the popular commercial.
     T-shirt reads "Did Someone Say Tacos?". Available for a limited time only!`,
     'category': 'office',
@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
     'title': 'GEICO Manatee'
   },
   {
-    'id': 'GEPFOGBACKPACK',
+    '_id': 'GEPFOGBACKPACK',
     'description': `With its sleek, streamlined design, you can shuttle back and forth in style
     and not sacrifice your unique look for a typical work bag. Made of double ripstop 420D nylon for extra durability.
     Features a padded laptop compartment, crush-proof tech vault, spacious main compartment, accessory pockets,
@@ -32,7 +32,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Ogio Shuttle Backpack'
   },
   {
-    'id': 'GEPFTACOKOOZIE',
+    '_id': 'GEPFTACOKOOZIE',
     'description': `Did Someone Say Tacos? The catch phrase from the popular GEICO Manatee commercial,
     and words to live by for taco lovers everywhere! Perfect to take to Taco Tuesday, or your next tailgate/barbecue.
     ALL THE TACOS!`,
@@ -42,7 +42,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Taco Koozie'
   },
   {
-    'id': 'GEPFCAPDUFFEL',
+    '_id': 'GEPFCAPDUFFEL',
     'description': `Standard features include large main zippered compartment,
     dedicated zippered shoe pocket, and front zippered pocket for additional storage.
     Detachable, adjustable padded strap and carrying handles for ease of travel.
@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Capitol Duffel'
   },
   {
-    'id': 'GEPFTSPADFB',
+    '_id': 'GEPFTSPADFB',
     'description': `Make on the go meetings a breeze with this Zippered-closure, tablet stand padfolio.
     Featuring a removable iPad easel stand integrated into interior cover with an adjustable height easel stand.
     Organizational panel built into iPad stand featuring three pen, stylus or USB memory ports, five business card pockets
@@ -66,7 +66,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Pedova Tablet Padfolio'
   },
   {
-    'id': 'GEPFBEEBOP',
+    '_id': 'GEPFBEEBOP',
     'description': `It’s time to bop to the beat of your own drum.
     Experience the full-range audio spectrum with outside noise reduction on the Beebop Bluetooth headphones.
     They have a built-in microphone for integrated call handling and text notifications, essential for rocking out—but not missing out.`,
@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Beebop Bluetooth Headphones'
   },
   {
-    'id': 'GEPFLIGHTKYCNRB',
+    '_id': 'GEPFLIGHTKYCNRB',
     'description': `Plastic flashlight with carabiner clip at top. 2 Light functions: Slide switch up for 2 LED bulbs to shine,
      slide switch down for 1 LED bulb to shine. Uses 2 button cell batteries (included).`,
     'category': 'tech',
@@ -85,7 +85,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Carabiner Flashlight'
   },
   {
-    'id': 'GEPFDUALCHGRS',
+    '_id': 'GEPFDUALCHGRS',
     'description': `Charge multiple items on the go with this Dual 5-Volt USB car charger!`,
     'category': 'tech',
     'imageUrl': 'assets/images/car_charger.jpg',
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Car Charger'
   },
   {
-    'id': 'GEPFMGLEDKCB',
+    '_id': 'GEPFMGLEDKCB',
     'description': `Magnifier and LED Light Keychain, with batteries included.`,
     'category': 'tech',
     'imageUrl': 'assets/images/keychain.jpg',
@@ -101,7 +101,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Magnifier and LED Keychain'
   },
   {
-    'id': 'GEPFPOPSOCKET',
+    '_id': 'GEPFPOPSOCKET',
     'description': `A PopSocket® sticks flat to the back of your phone, tablet or case with its rinsable, repositionable gel.
     Once extended, the PopSocket® becomes a media stand for your device, a photo or texting grip, or lower it for a video chat.
     PopSockets® can be used on any brand of phone.`,
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Popsocket'
   },
   {
-    'id': 'GEPFULCHGR',
+    '_id': 'GEPFULCHGR',
     'description': `This small battery backup will keep your mobile devices charged when you need them most.
     The UL Listed, 2200 mAh Lithium Ion Grade A Battery has enough power to fully charge an iPhone,
     giving you about 8 hours of additional talk time.
@@ -124,7 +124,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Portable Charger'
   },
   {
-    'id': 'GEPFGOLFUMB',
+    '_id': 'GEPFGOLFUMB',
     'description': `Rain or shine, this 60" arc umbrella is a must-have on and off the golf course.
     An automatic-open umbrella that is constructed with fiberglass shaft and ribs,
     a rubber handle and nylon material that has an anti-wind canopy design,
@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Arc Umbrella'
   },
   {
-    'id': 'GEPFPOMBEANIE',
+    '_id': 'GEPFPOMBEANIE',
     'description': `100% Acrylic Jaquard knit features a 4-color Snowflake pattern with white, graphite,
     and carbon tones playing with your favorite team color. Cuddly soft Sherpa lining for a soft, warm feel!`,
     'category': 'outdoor',
@@ -145,7 +145,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Fleece Lined Pom Beanie'
   },
   {
-    'id': 'GEPFMMSUNGLS',
+    '_id': 'GEPFMMSUNGLS',
     'description': `Hit the streets in style this summer with these Crystalline Mirrored Sunglasses.
     Offering more than just a good look, these sunglasses also have UV400 Lenses that provide 100% UVA and UVB protection.
     Made of polycarbonate material. Clear frame with Blue mirrored lenses, and the GEICO Logo is Printed in blue on the right arm.`,
@@ -155,7 +155,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Malibu Sunglasses'
   },
   {
-    'id': 'GEPFCHAIRRB',
+    '_id': 'GEPFCHAIRRB',
     'description': `PolyCanvas outdoor chair folds up and fits into carrying case with strap for easy transporting and storage.
     Features armrests with built-in cup holders. Loading weight limit: 300lbs.`,
     'category': 'outdoor',
@@ -164,7 +164,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Event Chair'
   },
   {
-    'id': 'GEPFSCRAPERRB',
+    '_id': 'GEPFSCRAPERRB',
     'description': `Durable plastic, long handle snow and ice remover, keeps you prepared for any weather.
     Features snow brush on one end and removable 4.5"w ice scraper blade on the other.`,
     'category': 'outdoor',
@@ -173,7 +173,7 @@ export const PRODUCTS: Product[] = [
     'title': 'Ice Scraper'
   },
   {
-    'id': 'GEPFBKPKCLRB',
+    '_id': 'GEPFBKPKCLRB',
     'description': `The most convenient way to bring food and beverages with you wherever you may go, while keeping them cold!
     This Arctic Zone 18 Can Cooler Backpack is made with high density thermal insulation, featuring an exterior zippered pocket,
     mesh pocket and padded adjustable backpack straps. Ultra Safe® leak proof, easy clean PEVA lining.

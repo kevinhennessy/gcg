@@ -5,16 +5,16 @@
         <img [attr.src]= "p.imageUrl" [attr.alt]= "p.title">
       </div>
       <div class= "cart-item-title">
-        <a [routerLink]= "['/products', p.id]">{{ p.title }}</a>
+        <a [routerLink]= "['/products', p._id]">{{ p.title }}</a>
       </div>
       <div class= "cart-item-quantity">
         <mat-form-field>
-          <input matInput type= "number" min= "0"  placeholder= "Quantity"  [formControlName]= "p.id">
+          <input matInput type= "number" min= "0"  placeholder= "Quantity"  [formControlName]= "p._id">
         </mat-form-field>
       </div>
       <div class= "cart-item-price">{{ p.price | currency }}</div>
       <div class= "cart-item-remove">
-        <button mat-icon-button (click)= "removeItem(p.id)">
+        <button mat-icon-button (click)= "removeItem(p._id)">
           <mat-icon>close</mat-icon>
         </button>
       </div>
