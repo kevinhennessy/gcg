@@ -4,17 +4,11 @@
   background: #f3f3f3;
 }
 
-/* .product-grid-tile{
-  margin-bottom: 50px !important;
-} */
-
 .product-tile {
     cursor: pointer;
     background: white;
     height: 98%;
     width: 98%;
-/*     padding: 8px;*/
-    /* margin: 5px; */
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
