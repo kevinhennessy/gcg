@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import {
     MatToolbarModule,
     MatButtonModule,
@@ -42,7 +41,6 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
