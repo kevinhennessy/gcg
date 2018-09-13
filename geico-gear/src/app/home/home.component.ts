@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  readonly categories = ['all', 'office', 'apparel', 'outdoor'];
+  readonly categories = ['all', 'office', 'tech', 'outdoor'];
   categoryName: string;
 
   constructor(private route: ActivatedRoute) {}
