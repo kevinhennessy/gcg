@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,37 +6,37 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./checkout.component.css'],
   templateUrl: './checkout.component.html'
 })
-export class CheckoutComponent {
+export class CheckoutComponent implements OnInit {
+
+  formModel: FormGroup;
 
   readonly months: string[] = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
   ];
 
-  readonly years: number[];
+  currentYear = new Date().getFullYear();
+  years = Array.from({ length: 10 }, (_, index) => this.currentYear + index);
 
-  readonly formModel: FormGroup;
+  constructor(private fb: FormBuilder) {}
 
-  constructor(fb: FormBuilder) {
-    const currentYear = new Date().getFullYear();
-    this.years = Array.from({ length: 10 }, (_, index) => currentYear + index);
-
-    this.formModel = fb.group({
-      account: fb.group({
+  ngOnInit() {
+    this.formModel = this.fb.group({
+      account: this.fb.group({
         email: [, [Validators.required, Validators.email]],
         phone: [, Validators.required]
       }),
-      address: fb.group({
+      address: this.fb.group({
         line1: [, Validators.required],
         city: [, Validators.required],
         state: [, Validators.required],
         zip: [, Validators.required],
         country: [, Validators.required]
       }),
-      payment: fb.group({
+      payment: this.fb.group({
         cardholder: [, Validators.required],
         cardNumber: [, Validators.required],
-        expiry: fb.group({
+        expiry: this.fb.group({
           month: [, Validators.required],
           year: [, Validators.required],
           cvv: [, Validators.required]
