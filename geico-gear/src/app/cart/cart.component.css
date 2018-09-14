@@ -10,7 +10,6 @@
 
 .cart-item {
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     color: rgba(0, 0, 0, 0.54);
     margin-bottom: 24px;
@@ -27,14 +26,12 @@
 }
 
 .cart-item-title {
-    -webkit-box-flex: 2;
     flex: 2;
     font-weight: 500;
     margin-left: 24px;
 }
 
 .cart-item-quantity {
-    -webkit-box-flex: 1;
     flex: 1 1 70px;
     margin-right: 24px;
 }
@@ -49,9 +46,7 @@
 
 .cart-actions {
     display: flex;
-    -webkit-box-pack: end;
     justify-content: flex-end;
-    -webkit-box-align: center;
     align-items: center;
     font-weight: 500;
 }

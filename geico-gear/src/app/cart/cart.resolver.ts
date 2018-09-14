@@ -14,7 +14,6 @@ export class CartResolver implements Resolve<Product[]> {
   ) {}
 
   resolve() {
-    // Get IDs of all products in the shopping cart.
     const productsInCart = Object.keys(this.shoppingCartService.getItems());
 
     const requests = productsInCart.map(productId =>
