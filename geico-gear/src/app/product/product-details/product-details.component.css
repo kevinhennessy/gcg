@@ -7,11 +7,8 @@
 
    .quantity {
     margin-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
    }
 
@@ -30,14 +27,3 @@
     background-size: contain;
     height: 50%;
    }
-
-.mat-select-trigger {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    min-width: 112px;
-    cursor: pointer;
-    position: relative;
-    box-sizing: border-box;
-}
-
