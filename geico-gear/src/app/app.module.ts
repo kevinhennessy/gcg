@@ -13,7 +13,6 @@ import {
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
-    MatCardModule,
     MatSelectModule,
     MatInputModule,
     MatBadgeModule
@@ -46,7 +45,6 @@ import { CheckoutComponent } from './checkout/checkout.component';
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
-    MatCardModule,
     MatSelectModule,
     MatInputModule,
     MatBadgeModule,
