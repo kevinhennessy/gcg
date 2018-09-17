@@ -11,7 +11,6 @@ import {
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
-    MatCardModule,
     MatSelectModule,
     MatInputModule,
     MatBadgeModule
@@ -44,7 +43,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
-    MatCardModule,
     MatSelectModule,
     MatInputModule,
     MatBadgeModule,
