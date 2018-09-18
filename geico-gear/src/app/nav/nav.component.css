@@ -2,6 +2,7 @@
     flex: 1 1 auto;
 }
 
-.gcg-badge[data-badge] {
-    position: relative;
+.storeName{
+  font-size: x-large;
+  padding: 10px;
 }
