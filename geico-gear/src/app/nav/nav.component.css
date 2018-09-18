@@ -1,3 +1,8 @@
 .fill {
     flex: 1 1 auto;
 }
+
+.storeName{
+  font-size: x-large;
+  padding: 10px;
+}
