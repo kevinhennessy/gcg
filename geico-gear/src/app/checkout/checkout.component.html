@@ -11,7 +11,7 @@
           <mat-form-field class="mat-form-field">
             <input matInput required autofocustype="email" placeholder="Email" formControlName="email">
             <mat-hint class="error" *ngIf="hasError('required', ['account', 'email'])">Email is required</mat-hint>
-            <mat-hint class="error" *ngIf="hasError('pattern', ['account', 'email'])">Email is invalid</mat-hint>
+            <mat-hint class="error" *ngIf="hasError('email', ['account', 'email'])">Email is invalid</mat-hint>
           </mat-form-field>
         </div>
         <div class="row">
