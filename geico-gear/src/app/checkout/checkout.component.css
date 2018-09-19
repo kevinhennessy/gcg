@@ -71,14 +71,6 @@ header span {
     margin-left: 8px;
 }
 
-mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-    background-color: #00bcd4;
-}
-
-.mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-    color: white;
-}
-
 .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
     background-color: #00bcd4;
     width: 100%;
