@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
-      this.categoryName = params['category'];
+    this.route.paramMap.subscribe(params => {
+      this.categoryName = params.get('category');
       if (this.categoryName === 'all') {
         this.products = this.productService.getAll();
       } else {
