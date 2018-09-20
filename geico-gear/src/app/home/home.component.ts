@@ -13,9 +13,9 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.route.params.subscribe(
+    this.route.paramMap.subscribe(
       params => {
-        this.categoryName = params['category'];
+        this.categoryName = params.get('category');
       }
     );
   }
