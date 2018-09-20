@@ -3,19 +3,3 @@
   display: block;
   background: #f3f3f3;
 }
-
-.product-tile {
-    cursor: pointer;
-    background: white;
-    height: 98%;
-    width: 98%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mat-figure{
-  margin-bottom: 15px !important;
-}
